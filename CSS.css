@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.link-titles{
+    letter-spacing: 10px;
+    font-size: 35px;
+}
+/* start header style */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+.menu{
+    font-size: 30px;
+    display: none;
+}
+header ul{
+    display: flex;
+    max-width: 1100px;
+    min-width: 500px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.logo {
+    text-transform: uppercase;
+}
+.logo span{
+    color: yellow;
+    
+}
+a:hover{
+    background-color: blue;
+    border-radius: 20px;
+}
+@media (max-width:767px) {
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    .header{
+        position: relative;
+    }
+    header ul{
+        display: none;
+        background-color: blanchedalmond;
+        position: absolute;
+        width: 100%;
+        top: 85px;
+        left: -100%;
+        flex-direction:column ;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 0;
+    }
+
+}
+/* end header style */
+/* start landing */
+.landing{
+    background: linear-gradient(to right , white , rgb(115, 115, 238) 70%);
+    width: 90%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px,1fr));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.landing h1{
+    color: black;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+.landing h1 span {
+    color: blue;
+}
+.landing p{
+    max-width: 500px;
+    text-wrap: wrap;
+    font-size: 20px;    
+}
+.landing .photo img{
+    width: 70%;
+}
+/* end landing */
+/* start services */
+.services{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px,1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.programming , .design , .instrument , .editing{
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+.services-content i{
+    font-size: 25px;
+    color: blue;
+}
+/* end services */
+/* start about */
+.about{
+    height: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+}
+.about-content{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px ,1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    width: 80%;
+}
+.about-content img{
+    width: 60%;
+    margin: 0 auto;
+}
+.about-description{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-description button{
+    background-color: aquamarine;
+    width: 200px;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-description button a{
+    text-decoration: none;
+}
+/* end about */
